@@ -1,0 +1,20 @@
+<svg width="160" height="40" viewBox="0 0 160 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Icon -->
+  <g transform="translate(0, 4) scale(0.8)">
+    <path d="M16 4L28 11V21L16 28L4 21V11L16 4Z" fill="#2E7D32" />
+    <path d="M16 8L24 12.5V19.5L16 24L8 19.5V12.5L16 8Z" fill="#81C784" />
+    <path d="M16 4V8M8 12.5L4 11M24 12.5L28 11M8 19.5L4 21M24 19.5L28 21M16 24V28" 
+          stroke="#A5D6A7" stroke-width="1" />
+    <circle cx="16" cy="4" r="1.5" fill="#1B5E20" />
+    <circle cx="16" cy="28" r="1.5" fill="#1B5E20" />
+    <circle cx="4" cy="11" r="1.5" fill="#1B5E20" />
+    <circle cx="4" cy="21" r="1.5" fill="#1B5E20" />
+    <circle cx="28" cy="11" r="1.5" fill="#1B5E20" />
+    <circle cx="28" cy="21" r="1.5" fill="#1B5E20" />
+  </g>
+  <!-- Text -->
+  <text x="36" y="26" font-family="system-ui, -apple-system, sans-serif" font-size="24" font-weight="700">
+    <tspan fill="#2E7D32">BRiX</tspan>
+    <tspan fill="#666666" font-weight="500"> Assets</tspan>
+  </text>
+</svg>

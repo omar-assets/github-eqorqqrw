@@ -1,0 +1,44 @@
+@import './styles/theme.css';
+@import './styles/utilities.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+
+/* Scroll Reveal Animations */
+@layer utilities {
+  .animate-in {
+    @apply opacity-100 translate-y-0 translate-x-0;
+  }
+}
+
+/* Shimmer Animation */
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-shimmer {
+  animation: shimmer 2s infinite;
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-in,
+  .animate-shimmer,
+  .animate-pulse {
+    @apply transition-none translate-x-0 translate-y-0;
+  }
+}

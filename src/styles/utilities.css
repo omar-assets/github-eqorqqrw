@@ -1,0 +1,49 @@
+@layer utilities {
+  /* ... existing utilities ... */
+
+  /* Animation Utilities */
+  .animate-in {
+    animation: enter 150ms ease-out;
+  }
+
+  .slide-in-from-right {
+    transform: translateX(100%);
+    animation: slideInFromRight 300ms ease-out forwards;
+  }
+
+  @keyframes slideInFromRight {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  .slide-out-to-right {
+    animation: slideOutToRight 300ms ease-in forwards;
+  }
+
+  @keyframes slideOutToRight {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(100%);
+    }
+  }
+
+  /* Backdrop animations */
+  .backdrop-in {
+    animation: backdropIn 150ms ease-out;
+  }
+
+  @keyframes backdropIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}

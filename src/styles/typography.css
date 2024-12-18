@@ -1,0 +1,52 @@
+@layer base {
+  /* Headings */
+  h1, .h1 {
+    @apply text-4xl md:text-5xl font-bold text-gray-900 tracking-tight;
+  }
+
+  h2, .h2 {
+    @apply text-3xl md:text-4xl font-semibold text-gray-900 tracking-tight;
+  }
+
+  h3, .h3 {
+    @apply text-2xl font-semibold text-gray-900;
+  }
+
+  h4, .h4 {
+    @apply text-xl font-semibold text-gray-900;
+  }
+
+  /* Body Text */
+  p, .body-lg {
+    @apply text-lg text-gray-600 leading-relaxed;
+  }
+
+  .body-base {
+    @apply text-base text-gray-600 leading-relaxed;
+  }
+
+  .body-sm {
+    @apply text-sm text-gray-500 leading-relaxed;
+  }
+
+  /* Interactive Elements */
+  button, a {
+    @apply focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2;
+  }
+
+  /* Form Labels */
+  label {
+    @apply text-sm font-medium text-gray-700;
+  }
+}
+
+/* Utility Classes */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .heading-underline {
+    @apply relative pb-2 after:absolute after:bottom-0 after:left-0 after:w-12 after:h-1 after:bg-primary;
+  }
+}
